@@ -1,8 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
-    The following two paragraphs will render the variables (tweet, and sentiment)
-    Flask uses the Jinja template language to handle dynamic content. 
+
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -19,7 +18,7 @@ app = Flask(__name__)
 def home():
     '''This is the home route. It only handles GET requests. It will return the templates/index.html file.'''
 
-    return render_ # return the html file under templates foldertemplate('index.html')
+    return render_template('index.html') # return the html file under templates foldertemplate('index.html')
 
 
 # Home route that does allow POST requests.
@@ -47,7 +46,7 @@ def analyze():
 
             lemmatizer = WordNetLemmatizer()
             token = lemmatizer.lemmatize(token, pos)
- # return the html file under templates folder
+
             if len(token) > 0 and token not in string.punctuation and token.lower() not in stop_words:
                 cleaned_tokens.append(token.lower())
         return cleaned_tokens
@@ -64,7 +63,7 @@ def analyze():
     sentiment = clf.classify(dict([token, True] for token in custom_tokens))
     
     # return our html template with the variables to be injected
-    return render_template('index.html',tweet = tweet, sentiment = sentiment)
+    return render_template('index.html',tweet = custom_tweet, sentiment = sentiment)
 
 
 if __name__== '__main__':
