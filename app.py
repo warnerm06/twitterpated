@@ -23,10 +23,11 @@ def home():
 def analyze():
 
     # this dataset is required for analysis
-    punkt_downloaded = False
+    nltk_downloads = False
 
-    if punkt_downloaded == False:
+    if nltk_downloads == False:
         nltk.download('punkt')
+        nltk.download('averaged_perceptron_tagger')
 
     tweet = request.form.get('text') # get the text from the html form that was submitted. 
     
