@@ -1,3 +1,5 @@
+# A script to download the necessary nltk files for pre-processing.
+
 import nltk
 print('Running startup.py...............................')
 nltk.download('punkt')
