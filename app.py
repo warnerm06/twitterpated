@@ -22,6 +22,12 @@ def home():
 @app.route('/',methods=['POST'])
 def analyze():
 
+    # this dataset is required for analysis
+    punkt_downloaded = False
+
+    if punkt_downloaded == False:
+        nltk.download('punkt')
+
     tweet = request.form.get('text') # get the text from the html form that was submitted. 
     
     # clean the tweet and return tokens. This is from previous work.
