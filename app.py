@@ -22,12 +22,13 @@ def home():
 @app.route('/',methods=['POST'])
 def analyze():
 
-    # this dataset is required for analysis
+    # this data is required for analysis
     nltk_downloads = False
 
     if nltk_downloads == False:
         nltk.download('punkt')
         nltk.download('averaged_perceptron_tagger')
+        nltk.download('wordnet')
 
     tweet = request.form.get('text') # get the text from the html form that was submitted. 
     
@@ -64,10 +65,6 @@ def analyze():
     custom_tokens = remove_noise(word_tokenize(custom_tweet))
 
     sentiment = clf.classify(dict([token, True] for token in custom_tokens))
-
-    # your brows may render this differently if you remove str()
-    result = str({'tweet':tweet,
-              'sentiment': sentiment})
               
     return render_template('index.html',tweet = tweet, sentiment = sentiment)
 
