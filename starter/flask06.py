@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     '''This is the home route. It only handles GET requests. It will return the templates/index.html file.'''
-
+ 
     return render_template('index.html') # return the html file under templates foldertemplate('index.html')
 
 
