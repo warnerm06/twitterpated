@@ -20,18 +20,18 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * What will you do if you get stuck? 
 
 # The Assignment
-0. Some instructions are very precise and others are more open ended. This is intentional. We want you to develop your git skills! Take it slow and take the time to understand what you are doing. 
+0. Some instructions are very precise and others are more open ended. This is intentional. We want you to develop your git skills! Take it slow and take the time to understand what you are doing. Also, look out for mistakes in the instructions. 
 1. Each portion of the assignment will have a recomended student to perform the activty. A tasks are harder than B tasks and C tasks are the simplest. Decide amongst yourselves who does what. Again, you can abandon the recomendations if desired. It would be beneficial to work through this assignment together instead of doing each part solo. 
 
-2. Each student should copy the files in 'starter' into their own folder(does not need to be a repo). Run and understand the following notebooks in this order:
-    1. notebook.a
+2. Each student should copy the files in 'starter' into their own folder(does not need to be a repo). Please refer to the finished product as needed. Run and understand the following notebooks in this order:
+    1. `train_tweet_classifier.ipynb`
         * This is a cleaned up version of previous homwork. Pay particular attention to the `pickling` section. 
-    2. notebook.b
+    2. `test_tweet_classifier_pickle.ipynb`
         * This notebook just tests our model to make sure we can use the `pickled` version. 
 
 3. Student A should create a new empty repo. It can have a Readme if you want. Invite Your team members to this repo. 
     * All members should accept invite. 
-    * Insert image here
+    ![github collab](images/github_collab.png)
 4. Everyone should clone the repo. 
     * As you are working think through the process. There is a remote repo on Github and one local copy per team member. 
 5. Student B should navigate to the repo and create a branch called `dev`. This branch will be a copy of `master`. 
@@ -219,7 +219,7 @@ Congrats on getting a web app to run locally! Now it's time to share you app wit
 
 2. Student C will added necessary files for heroku to run.
     * Create a branch called `heroku` and switch to it
-    * Copy the following files from `starter/` into your app
+    * Copy the following files from `starter/` into your appstarted by user warnerm06@gma
         * `Procfile`, `requirements.txt` and `start.py`
     * Merge your branch into `master`
     * Push `master` to the remote repo
@@ -229,7 +229,7 @@ Congrats on getting a web app to run locally! Now it's time to share you app wit
     * Make a change and merge into master. 
         * Watch the build! 
     * You can view logs for troubleshooting under `More> View Logs`
-
+    
 
 Optional: Please continue to work together on optional additions.
 1. Customize your app any way you want. 
