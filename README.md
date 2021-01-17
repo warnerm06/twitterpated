@@ -4,12 +4,15 @@ A challenge Data Scientists have is sharing the fruits of their labor. What good
 ###  This is a Group Activity
 Coding and git is a group activity. If you want to learn git you need to work with other people. Working solo and only commiting to `master/main` will not get you very far. This assignment is HARD. It's hard because we have a lot to cover and there are many ways to make mistakes. Git is forgiving because you can recover from most mistakes but it's difficult because mistakes are easy to make. So start early and help each other out! 
 
+
 Each group should have 3 members. If your group does not please work among yourselves to decide who takes on what responsibilites. The instructions specify who does what in an effort to share the load and have less confident members handle simpler tasks. Feel fee to abandon the delegations and share the work as you see fit. Just make sure the work gets done and work is shared equitably. 
 
+#### Note about `master/main`
+Many companies are moving away from the term `master` in favor of `main`. This tutorial will use the term `master` because it is most likely what you have installed on your local machine. `master` and `main` are only interchangeable with specific versions of software and configurations. 
 ### Solo Activity
 **Pre-Work** *Start Early!*
 
-To get started the pre-work will be solo but you can collaborate on this too if you wish. Each person should complete the following materials. 
+To get started the pre-work will be solo but you can collaborate on this too if you wish. Each person should complete the following materials: 
 * [Corey MS Git](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) (Entire Series)
 * [Flask Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH) (Only videos 1 and 2)
 * Read through the rest of these instructions. 
@@ -54,12 +57,12 @@ To get started the pre-work will be solo but you can collaborate on this too if 
             app.run(debug=True)
         ```
     * in a terminal run `python app.py` to run the app. 
-    * Navigate to `127.0.1:5000` in your browser to see the app. This is also called `localhost`. 
+    * Navigate to `127.0.1:5000` in your browser to see the app. This is also called `localhost:5000`. 
     * Save your file.
     * Ctrl + c will kill the server and return your prompt.
     * Commit your changes. 
     * Checkout `master` branch. 
-    * Do a git pull to get any changes on master. ALWAYS do a git pull on master before merging changes. 
+    * Do a git pull to get any changes on master. **ALWAYS** do a git pull on master before merging changes. This gives you the latest version of `master`.
     * Do a git merge to bring in the `dev` branch changes. 
     * Git push to the remote repo. 
         * You may get an error and have to follow the recomendations on setting upstream origin. 
