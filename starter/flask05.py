@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
 
-    return render_template('index02.html',my_arg='Sweet! we can pass args to html')
+    return render_template('index.html',my_arg='Sweet! we can pass args to html')
 
 @app.route('/about')
 def about():
