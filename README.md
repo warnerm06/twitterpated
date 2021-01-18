@@ -1,4 +1,5 @@
-I am in your code committing changes!
+I'M HELPING!
+
 
 ### Create a Web App that Analyzes Tweets
 A challenge Data Scientists have is sharing the fruits of their labor. What good is a model if it only lives in one person's notebook? One solution to this problem is to create a web app that takes user input and gives back the preditions. In large companies Data Scientists would hand off their models to other teams and let them worry about implementation. Small companies and hobbyists have no such luxury. Fortunately creating a web app can easily be done before breakfast. So let's get started and create a web app that performs sentiment analysis on tweets! 
