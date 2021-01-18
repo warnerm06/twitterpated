@@ -46,7 +46,7 @@ To get started the pre-work will be solo but you can collaborate on this too if 
         * This requires the person who set up the repo to approve the code before it can be merged into `master`
         * This acts as a quality control gate
         * We will remove this check in futre steps but it's good to see how it's done in production
-    ![protect branch](images/protect_branc.png)
+    ![protect branch](images/protect_branch.png)
     ![set pr branch](images/pull_request_branch.png)
 4. Everyone should clone the repo. 
     * As you are working think through the process. There is a remote repo on Github and one local copy per team member. 
