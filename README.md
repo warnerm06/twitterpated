@@ -1,6 +1,3 @@
-Once more into the breach!
-
-
 ### Create a Web App that Analyzes Tweets
 A challenge Data Scientists have is sharing the fruits of their labor. What good is a model if it only lives in one person's notebook? One solution to this problem is to create a web app that takes user input and gives back the preditions. In large companies Data Scientists would hand off their models to other teams and let them worry about implementation. Small companies and hobbyists have no such luxury. Fortunately creating a web app can easily be done before breakfast. So let's get started and create a web app that performs sentiment analysis on tweets! 
 
@@ -26,7 +23,11 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * What will you do if you get stuck? 
 
 # The Assignment
-0. Some instructions are very precise and others are more open ended. This is intentional. We want you to develop your git skills! Take it slow and take the time to understand what you are doing. Also, look out for mistakes in the instructions. 
+0. Some instructions are very precise and others are more open ended. This is intentional. We want you to develop your git skills! Take it slow and take the time to understand what you are doing. Also, look out for mistakes in the instructions. We did his best we could to create a meaningful project for you. Unfortunagely there may be some mistakes or not so clear instructions. 
+    * When in doubt:
+        * Google
+        * Ask help from your teamates
+        * Ask help on Slack
 1. Each portion of the assignment will have a recomended student to perform the activty. A tasks are harder than B tasks and C tasks are the simplest. Decide amongst yourselves who does what. Again, you can abandon the recomendations if desired. It would be beneficial to work through this assignment together instead of doing each part solo. 
 
 2. Each student should copy the files in 'starter' into their own folder(does not need to be a repo). Please refer to the finished product as needed. Run and understand the following notebooks in this order:
@@ -48,8 +49,9 @@ To get started the pre-work will be solo but you can collaborate on this too if 
         * We will remove this check in futre steps but it's good to see how it's done in production
     ![protect branch](images/protect_branch.png)
 
-    * Some text here
+    * Add a branch protection rule to `master`
     ![set pr branch](images/pull_request_branch.png)
+    * Alert the other members of the group that the repo is ready. 
 4. Everyone should clone the repo. 
     * As you are working think through the process. There is a remote repo on Github and one local copy per team member. 
 5. Student B should navigate to the repo and create a branch called `dev`. This branch will be a copy of `master`. 
@@ -82,9 +84,13 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * Git push to the remote repo. 
         * You may get an error and have to follow the recomendations on setting upstream origin. 
     * Delete your local `dev` branch and remote branch if you created one. 
-6. Student A should receive a pull request in their email and on github. 
+6. Student A should receive a pull request in their email and/or on github. 
     * Most companies don't allow everyone to commit to master so we will simulate that for the first few steps. This acts as a safeguard against bad commits bringing down your produciton apps. 
     * View the pull request in github and accept it if it looks good. 
+    * In github click on `Pull requests > the open pull request > view changes. 
+        * You should see the code that was added/changed. It will have green and/or red highlights
+    * Click on Approve and/or Merge.
+    * Be sure the changes have been merged
 7. Student C will create an about page. 
     * In your clone of the repo perform the following: 
     * Do a git pull to see the changes to `master`. 
@@ -112,6 +118,9 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * Delete your local `about` branch.
 8. Student A should inspect and accept the pull request in github. 
     * Edit permissions to allow all to commit to master. 
+        * Go to Settings > Branches
+        * Delete the Branch protection rule
+        * Now anyone can commit to master
     * Student A will not longer be the gatekeeper. 
 9. Student A will edit the app to accept GET requests and return the arguments to the page. 
     * Do a git pull on `master` branch. 
