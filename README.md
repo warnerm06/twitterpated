@@ -9,6 +9,8 @@ Each group should have 3 members. If your group does not please work among yours
 
 #### Note about `master/main`
 Many companies are moving away from the term `master` in favor of `main`. This tutorial will use the term `master` because it is most likely what you have installed on your local machine. `master` and `main` are only interchangeable with specific versions of software and configurations. 
+
+Feel free to use `main` if it works for your team. You will likely have addiitonal configuration for your local git repository as well as Heroku.  Please post a How-To on Slack if your team configures your app to use `main` so that others may benefit. 
 ### Solo Activity
 **Pre-Work** *Start Early!*
 
