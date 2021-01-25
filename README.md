@@ -128,7 +128,7 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * Do a git pull on `master` branch. 
     * Run the app to make sure it works and see the about page
     * Crete a branch called `requests` and switch to that branch
-    * add `from flask import Request` to the top of the file
+    * add `from flask import request` to the top of the file
     * Edit the `home` route to match the following code. The `app.py` file should look like `flask03.py`.
     ```
     @app.route('/')
