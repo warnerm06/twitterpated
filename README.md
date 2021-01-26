@@ -40,6 +40,7 @@ To get started the pre-work will be solo but you can collaborate on this too if 
 
 3. Student A should create a new empty repo. It can have a Readme if you want. Invite Your team members to this repo. 
     * All members should accept invite. 
+    * **Edit** You must have a file in the repo for the 'branch' option to show up. Create a file in `master` and push it to the remote repo.
     ![github collab](images/github_collab.png)
     * Go to Settings > Branches and click 'add rule'
     * Under Branch Name patter put `master`
@@ -85,6 +86,11 @@ To get started the pre-work will be solo but you can collaborate on this too if 
     * Do a git merge to bring in the `dev` branch changes. 
     * Git push to the remote repo. 
         * You may get an error and have to follow the recomendations on setting upstream origin. 
+    * You should have gotten an error about requiring approvals.This is due to the protected branch.
+    * Checkout your `dev` branch and push it to the remote repo
+    * In github.com create a pull request
+    * Student A will need to approve the pull request and merge the changes. 
+    * Confirm changes have been merged to `master`
     * Delete your local `dev` branch and remote branch if you created one. 
 6. Student A should receive a pull request in their email and/or on github. 
     * Most companies don't allow everyone to commit to master so we will simulate that for the first few steps. This acts as a safeguard against bad commits bringing down your produciton apps. 
